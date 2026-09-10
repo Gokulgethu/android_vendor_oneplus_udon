@@ -1,5 +1,6 @@
 {
     "default": {
+        "isSkipItsVideoStabilization": true,
         "feature_motor_enable": false,
         "feature_aps_enable": true,
         "feature_auth_enable": true,
@@ -14,6 +15,8 @@
         "feature_fps_enable": true,
         "feature_explorer_enable": true,
         "feature_rio_enable": true,
+        "feature_multicamera_enable": true,
+        "its_fd_enable": false,
         "limit_3rd_app_size": [
             "com.mt.mtxx.mtxx.sub.preview",
             "com.benqu.wuta.sub.preview",
@@ -67,6 +70,9 @@
             "2592x1196",
             "2560x1920"
         ],
+        "limitSizeListForCtsPhysical": [
+            4096, 3072
+        ],
         "limitSizeListForCts": [
             4160,
             3120,
@@ -98,12 +104,14 @@
             1748,
             2304,
             1728,
-            1920,
-            1440,
+            2772,
+            1240,
             2304,
             1032,
             2160,
             1080,
+            1920,
+            1440,
             1920,
             1080,
             1600,
@@ -194,7 +202,22 @@
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080,
         "app_enable_rio": true,
-        "supportExplorerCameraMask": 3
+        "supportExplorerCameraMask": 3,
+        "app_disable_fb_evict": true,
+        "scan_zoom_value": 1.26,
+        "scan_activity_name": "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+        "app_disable_fb_thirdparty_activity": [
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI00",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI01",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI02",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI03",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI04",
+            "com.tencent.mm.plugin.flash.FaceFlashUI",
+            "com.tencent.mm.plugin.flash.action.FaceFlashActionUI"
+        ],
+        "app_disable_fb_activity": [
+            "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
+        ]
     },
     "com.instagram.android": {
         "supportExplorerCameraMask": 3
@@ -302,11 +325,38 @@
         "minRatioFilterForNotAddSizeAPI1": 133,
         "needLimitFpsForAPI1": true
     },
+    "com.snapchat.android": {
+        "thirdPartyAppWidthLimitForCam0API2": 1920,
+        "thirdPartyAppHeightLimitForCam0API2": 1080
+    },
     "com.whatsapp": {
         "needlimitSizeForSurface": true,
         "limitWidthForSurface": 1920,
         "limitHeightForSurface": 1080,
-        "app_enable_rio": true
+        "app_enable_rio": true,
+        "app_enable_fb_activity": [
+            "com.whatsapp.voipcalling.VoipActivityV2"
+        ],
+        "app_disable_fb_activity": [
+            "com.whatsapp.camera.CameraActivity",
+            "com.whatsapp.qrcode.contactqr.ContactQrActivity",
+            "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity",
+            "com.whatsapp.status.composer.ConsolidatedStatusComposerActivity"
+        ]
+    },
+    "com.discord": {
+        "app_enable_fb_activity": [
+            "com.discord.main.MainActivity"
+        ]
+    },
+    "com.microsoft.teams": {
+        "app_enable_fb_activity": [
+            "com.microsoft.skype.teams.views.activities.PreJoinActivity",
+            "com.microsoft.skype.teams.views.activities.InCallActivity"
+        ],
+        "app_disable_fb_activity": [
+            "com.microsoft.office.lens.lenscommon.ui.LensActivity"
+        ]
     },
     "com.tencent.wework": {
         "needLimitFpsForAPI1": false
@@ -378,6 +428,8 @@
             "1204x768",
             "864x480",
             "804x360"
-        ]
+        ],
+        "limit_exposure_time_parameter":true,
+        "limit_physical_multi_resolution_size":true
     }
 }

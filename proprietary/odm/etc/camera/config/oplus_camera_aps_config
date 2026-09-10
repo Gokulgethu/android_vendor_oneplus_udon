@@ -1,5 +1,5 @@
 {
-  "file_version": 13.005,
+  "file_version": 13.006,
   "file_data": [
 
 {
@@ -167,7 +167,7 @@
   "VendorTag": "com.oplus.aps.params.rectify",
   "Type": "Int32",
   "Count": "8",
-  "Value": "  4,           2,                 -1,                    3441,        50,           210,              1,              1",
+  "Value": "  5,           3,                 -1,                    3441,        50,           210,              1,              1",
   "Comment": "satCameraId, ultraWideCameraId, frontUltraWideCameraId, caliDataLen, estimateTime, runTimeMemSize,  userArcPreview, useArcCapture"
 },
 
@@ -1743,7 +1743,7 @@
   "VendorTag": "com.oplus.asd.low.memory.params",
   "Type": "String",
   "Count": "2",
-  "Value": "120, 1500000000",
+  "Value": "120, 2500000000",
   "Comment": "skipFrameNum, lowMemoryThreshold"
 },
 
@@ -1781,6 +1781,24 @@
             udon_ov02b",
   "Comment": "
           should arrange as role0, role1, role2, role3"
+},
+
+{
+  "VendorTag": "com.oplus.aps.sat.logicCameraId",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "5"
+},
+
+{
+  "VendorTag": "com.oplus.aps.parse.logic2physic",
+  "Type": "Int32",
+  "Count": "8",
+  "Value": "1 /*logic camera id front*/,        1 /*physic camera id front*/,
+            2 /*logic camera id wide*/,         0 /*physic camera id wide*/,
+            3 /*logic camera id ultra wide*/,   2 /*physic camera id ultra wide*/,
+            4 /*logic camera id microscope*/,   3 /*physic camera id microscope*/",
+  "Comment": "two number in a group, odd is logic camera id, even is physic camera id"
 },
 
 {
@@ -1843,6 +1861,27 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "10"
+},
+
+{
+  "VendorTag": "com.oplus.params.feature.multicamera.enable",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.ocs.camera.ipu.meishe.filter.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+   "VendorTag": "com.oplus.aps.params.isIntervalshot.threshold",
+   "Type": "Int32",
+   "Count": "1",
+   "Value": "50"
 }
 
 ]

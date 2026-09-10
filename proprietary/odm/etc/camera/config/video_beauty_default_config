@@ -8,8 +8,42 @@
          "videoBeautyParam":
             {
                 "isOpen": 0,
-                "fbParam": "40,0,0,0,0,0,0,0,40,0,0"
+                "fbParam": "0,0,0,0,0,0,0,0,0,0,0",
+                "activityName": "tencent"
             }
+        },
+
+        {
+            "appName":"Teams",
+            "packageName":"com.microsoft.teams",
+            "videoBeautyParam":
+               {
+                   "isOpen": 0,
+                   "fbParam": "0,0,0,0,0,0,0,0,0,0,0",
+                   "activityName": "microsoft"
+               }
+        },
+
+        {
+            "appName":"Discord",
+            "packageName":"com.discord",
+            "videoBeautyParam":
+               {
+                   "isOpen": 0,
+                   "fbParam": "0,0,0,0,0,0,0,0,0,0,0",
+                   "activityName": "discord"
+               }
+        },
+
+        {
+            "appName":"WhatsApp",
+            "packageName":"com.whatsapp",
+            "videoBeautyParam":
+               {
+                   "isOpen": 0,
+                   "fbParam": "0,0,0,0,0,0,0,0,0,0,0",
+                   "activityName": "whatsapp"
+               }
         }
     ]
 }
