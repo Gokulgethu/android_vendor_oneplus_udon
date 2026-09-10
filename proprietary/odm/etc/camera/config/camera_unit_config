@@ -273,6 +273,7 @@
 	"com.ocs.camera.ipu.watermark.support":"1",
 	"com.oplus.camera.support.ai.master.watermark":"1",
 	"com.oplus.camera.quick.jpeg.watermark.process.in.aps":"0",
+    "com.ocs.camera.ipu.face.beauty.support":"0",
     "com.oplus.camera.jni.version": "V002.000.000"
   }
 }
